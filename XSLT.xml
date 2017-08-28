@@ -1,5 +1,5 @@
-<xsl:if test= "normalize-space(ns1:RelatedBenefitLimitStatuses/ns1:ClaimedAmount) != ''">
+<xsl:if test= "normalize-space(Amt:RelatedBenefitLimitStatuses/Amt:ClaimedAmount) != ''">
 	<xsl:element name="ClaimedAmount" xmlns = "http://schemas.hambs.com.au/external/membership/getmembershipbenefitlimitstatuses/membershipperson/2014/06">
-		<xsl:value-of select="/root:GetMembershipBenefitLimitStatusesResponse/ns1:MembershipPersons/ns1:SpecialityClasses/ns1:SpecialityClass/ns1:BenefitLimitStatuses/ns1:BenefitLimitStatus/ns1:RelatedBenefitLimitStatuses/ClaimedAmount" />
+		<xsl:value-of select="/root:GetMembershipBenefitLimitStatusesResponse/Amt:MembershipPersons/Amt:SpecialityClasses/Amt:SpecialityClass/Amt:BenefitLimitStatuses/Amt:BenefitLimitStatus/Amt:RelatedBenefitLimitStatuses/Amt:ClaimedAmount" />
 	</xsl:element>
 </xsl:if>
